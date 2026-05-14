@@ -1,0 +1,211 @@
+/* ════════════════════════════════════════════════
+   AccessHome — contrast.css
+   High-Contrast / Low-Vision Accessibility Mode
+   Applied when <body> has class="contrast-mode"
+   ════════════════════════════════════════════════ */
+
+body.contrast-mode {
+  /* ── Colour tokens override ── */
+  --bg:       #000000;
+  --bg2:      #0a0a0a;
+  --surface:  #1a1a1a;
+  --surfaceH: #2a2a2a;
+  --border:   #ffffff;
+  --borderA:  #ffff00;
+  --accent:   #ffff00;
+  --accent2:  #ffaa00;
+  --accent3:  #00eeff;
+  --text:     #ffffff;
+  --muted:    #cccccc;
+  --danger:   #ff4444;
+
+  /* ── Typography scale up ── */
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* ── Kill decorative blurs & noise (performance + clarity) ── */
+body.contrast-mode .bg-ambient,
+body.contrast-mode .bg-noise { display: none; }
+body.contrast-mode body { background: #000; }
+
+/* ── Nav ── */
+body.contrast-mode .nav {
+  background: #000 !important;
+  border-bottom: 3px solid #fff;
+  backdrop-filter: none;
+}
+body.contrast-mode .nav-logo { font-size: 1.5rem; }
+body.contrast-mode .logo-icon { border-color: #ffff00; border-width: 2px; }
+body.contrast-mode .nav-links a { font-size: 1rem; color: #fff; }
+body.contrast-mode .nav-links a:hover { color: #ffff00; text-decoration: underline; }
+body.contrast-mode .nav-links a.active {
+  color: #ffff00;
+  text-decoration: underline;
+  font-weight: 700;
+}
+body.contrast-mode .nav-links a.active::after { background: #ffff00; height: 3px; }
+
+/* ── Mode badge ── */
+body.contrast-mode .mode-badge {
+  background: #000;
+  border: 2px solid #ffff00;
+  color: #ffff00;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+body.contrast-mode .mode-dot { background: #ffff00; box-shadow: 0 0 10px #ffff00; }
+body.contrast-mode .avatar { border: 2px solid #fff; font-size: 0.85rem; }
+
+/* ── Device cards (home) ── */
+body.contrast-mode .device-card {
+  background: #111;
+  border: 3px solid #fff;
+  backdrop-filter: none;
+}
+body.contrast-mode .device-card:hover {
+  border-color: #ffff00;
+  box-shadow: 0 0 0 3px #ffff00;
+}
+body.contrast-mode .device-card.on {
+  border-color: #ffff00;
+  box-shadow: 0 0 0 3px #ffff00;
+  background: #1a1a00;
+}
+body.contrast-mode .device-card::before { display: none; }
+body.contrast-mode .device-card::after  { display: none; }
+body.contrast-mode .icon-box {
+  background: #222;
+  border: 2px solid #888;
+  width: 96px; height: 96px; border-radius: 18px;
+}
+body.contrast-mode .device-card.on .icon-box { background: #2a2a00; border-color: #ffff00; }
+body.contrast-mode .icon-box svg { width: 48px; height: 48px; stroke-width: 2; }
+body.contrast-mode .device-name { font-size: 1.25rem; font-weight: 800; }
+body.contrast-mode .device-extra { font-size: 0.9rem; color: #ccc; }
+
+/* ── Toggles ── */
+body.contrast-mode .toggle-track {
+  width: 52px; height: 28px;
+  background: #333; border: 2px solid #aaa;
+}
+body.contrast-mode .toggle-track.on { background: #ffff00; border-color: #ffff00; }
+body.contrast-mode .toggle-thumb { width: 20px; height: 20px; top: 2px; left: 2px; }
+body.contrast-mode .toggle-track.on .toggle-thumb { left: 26px; background: #000; }
+body.contrast-mode .toggle-label { font-size: 0.9rem; color: #fff; font-weight: 600; }
+
+/* ── Status bar ── */
+body.contrast-mode .status-pill {
+  background: #111; border: 2px solid #fff;
+  font-size: 0.85rem; color: #fff;
+  backdrop-filter: none;
+}
+body.contrast-mode .status-pill .pip { background: #ffff00; box-shadow: 0 0 8px #ffff00; width: 8px; height: 8px; }
+
+/* ── Light cards ── */
+body.contrast-mode .light-card {
+  background: #111; border: 3px solid #fff;
+  backdrop-filter: none;
+}
+body.contrast-mode .light-card.on { border-color: #ffaa00; box-shadow: 0 0 0 2px #ffaa00; background: #1a1200; }
+body.contrast-mode .light-room { font-size: 1.15rem; font-weight: 700; }
+body.contrast-mode .light-status { font-size: 0.9rem; color: #ccc; }
+body.contrast-mode .light-icon { background: #222; border: 2px solid #666; width: 56px; height: 56px; border-radius: 14px; }
+body.contrast-mode .light-card.on .light-icon { background: #2a1a00; border-color: #ffaa00; }
+body.contrast-mode .light-icon svg { width: 32px; height: 32px; stroke-width: 2; }
+
+/* ── Sliders ── */
+body.contrast-mode input[type=range] { height: 6px; background: #444; }
+body.contrast-mode input[type=range]::-webkit-slider-thumb {
+  width: 22px; height: 22px;
+  background: #ffaa00; box-shadow: 0 0 0 2px #000, 0 0 0 4px #ffaa00;
+}
+body.contrast-mode .slider-label { font-size: 0.88rem; color: #ccc; }
+
+/* ── Colour swatches ── */
+body.contrast-mode .swatch { width: 28px; height: 28px; border-width: 3px; }
+body.contrast-mode .swatch.active { border-color: #ffff00; outline: 2px solid #000; }
+
+/* ── AC cards ── */
+body.contrast-mode .ac-card {
+  background: #111; border: 3px solid #fff; backdrop-filter: none;
+}
+body.contrast-mode .ac-card.on { border-color: #00eeff; box-shadow: 0 0 0 2px #00eeff; background: #001a1e; }
+body.contrast-mode .ac-room { font-size: 1.15rem; font-weight: 700; }
+body.contrast-mode .temp-display { font-size: 4rem; color: #fff; }
+body.contrast-mode .temp-display span { color: #aaa; }
+body.contrast-mode .temp-btn {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: #222; border: 2px solid #fff;
+  font-size: 1.6rem; color: #fff;
+}
+body.contrast-mode .temp-btn:hover { background: #333; border-color: #ffff00; color: #ffff00; }
+body.contrast-mode .ac-mode-btn {
+  padding: 8px 18px; font-size: 0.88rem;
+  background: #222; border: 2px solid #aaa; color: #fff;
+}
+body.contrast-mode .ac-mode-btn.active { background: #001a1e; border-color: #00eeff; color: #00eeff; font-weight: 700; }
+body.contrast-mode .fan-label { font-size: 0.88rem; color: #ccc; }
+body.contrast-mode .fan-dot { width: 32px; height: 10px; background: #333; border: 1px solid #666; }
+body.contrast-mode .fan-dot.active { background: #00eeff; border-color: #00eeff; }
+
+/* ── Curtain cards ── */
+body.contrast-mode .curtain-card { background: #111; border: 3px solid #fff; backdrop-filter: none; }
+body.contrast-mode .curtain-room { font-size: 1.15rem; font-weight: 700; }
+body.contrast-mode .curtain-visual { background: #1a1a1a; border: 2px solid #444; }
+body.contrast-mode .curtain-rod { background: #888; height: 8px; }
+body.contrast-mode .curtain-l { background: linear-gradient(90deg, #555, #333); border-right: 2px solid #888; }
+body.contrast-mode .curtain-r { background: linear-gradient(270deg, #555, #333); border-left: 2px solid #888; }
+body.contrast-mode .curtain-pct { font-size: 0.88rem; color: #fff; font-weight: 700; }
+body.contrast-mode .curtain-btn {
+  padding: 12px 0; font-size: 0.9rem; font-weight: 700;
+  background: #222; border: 2px solid #aaa; color: #fff;
+}
+body.contrast-mode .curtain-btn:hover { background: #333; border-color: #ffff00; color: #ffff00; }
+body.contrast-mode .curtain-btn.primary { background: #1a1a00; border-color: #ffff00; color: #ffff00; }
+
+/* ── Contact ── */
+body.contrast-mode .contact-info-card { background: #111; border: 3px solid #fff; backdrop-filter: none; }
+body.contrast-mode .ci-label { font-size: 0.82rem; color: #ccc; }
+body.contrast-mode .ci-value { font-size: 0.95rem; color: #fff; }
+body.contrast-mode .form-input,
+body.contrast-mode .form-textarea,
+body.contrast-mode .form-select {
+  background: #111; border: 2px solid #fff; color: #fff;
+  font-size: 1rem; backdrop-filter: none;
+}
+body.contrast-mode .form-input:focus,
+body.contrast-mode .form-textarea:focus,
+body.contrast-mode .form-select:focus {
+  border-color: #ffff00; box-shadow: 0 0 0 4px rgba(255,255,0,0.2);
+  outline: none;
+}
+body.contrast-mode .form-label { font-size: 0.88rem; color: #ccc; }
+body.contrast-mode .btn-submit {
+  background: #ffff00; color: #000; font-size: 1.05rem;
+  border: 3px solid #ffff00;
+}
+body.contrast-mode .btn-submit:hover { box-shadow: 0 0 0 4px rgba(255,255,0,0.4); }
+body.contrast-mode .success-msg { background: #001a00; border-color: #00ff88; color: #00ff88; font-size: 1rem; }
+
+/* ── Page headers ── */
+body.contrast-mode .page-header h2 { font-size: 2.2rem; }
+body.contrast-mode .page-header p  { font-size: 1rem; color: #ccc; }
+
+/* ── Global focus ring (keyboard nav) ── */
+body.contrast-mode *:focus-visible {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 3px !important;
+}
+
+/* ── Skip-to-content link (contrast only) ── */
+body.contrast-mode .skip-link {
+  position: fixed; top: 12px; left: 12px; z-index: 9999;
+  background: #ffff00; color: #000;
+  padding: 10px 18px; border-radius: 8px;
+  font-weight: 800; font-size: 1rem;
+  transform: translateY(-200%);
+  transition: transform 0.2s;
+}
+body.contrast-mode .skip-link:focus { transform: translateY(0); }

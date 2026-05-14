@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "主页",
+    "lights": "灯光",
+    "ac": "空调",
+    "curtain": "窗帘",
+    "contact": "联系"
+  },
+  "ac": {
+    "title": "空调控制",
+    "desc": "控制每个房间的温度、模式和风速",
+    "cool": "制冷",
+    "heat": "制热",
+    "fan": "风扇",
+    "dry": "除湿",
+    "fanSpeed": "风速"
+  },
+  "lights": {
+    "title": "灯光控制",
+    "desc": "管理每个房间的亮度和颜色",
+    "brightness": "亮度"
+  },
+  "curtain": {
+    "title": "窗帘控制",
+    "desc": "打开、关闭或设置每个窗口的位置",
+    "open": "打开",
+    "close": "关闭",
+    "half": "半开"
+  },
+  "home": {
+    "desc": "智能控制 · 每个房间 · 任何设备",
+    "light": "灯光",
+    "ac": "空调",
+    "curtain": "窗帘"
+  },
+  "profile": {
+    "title": "个人资料",
+    "desc": "管理您的账户和偏好设置",
+    "personalInfo": "个人信息",
+    "name": "姓名",
+    "nameDesc": "您在AccessHome的显示名称",
+    "save": "保存",
+    "accessibility": "无障碍",
+    "fontSize": "字体大小",
+    "fontSizeDesc": "调整文字大小以提高可读性",
+    "language": "语言",
+    "displayLanguage": "显示语言",
+    "displayLangDesc": "更改应用程序的语言",
+    "privacy": "隐私",
+    "deviceData": "设备数据",
+    "deviceDataDesc": "将所有房间重置为默认设置",
+    "clearData": "清除设备数据",
+    "account": "账户",
+    "signOut": "退出登录",
+    "signOutDesc": "退出您的AccessHome账户",
+    "logout": "退出",
+    "changePhoto": "更换照片"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "如果您有智能家居相关问题，我们随时为您提供帮助。",
+    "phone": "电话",
+    "email": "邮箱",
+    "hours": "工作时间",
+    "hoursValue": "周一至周五 9:00–18:00",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "firstNamePlaceholder": "Sarah",
+    "lastNamePlaceholder": "Johnson",
+    "emailAddress": "邮箱地址",
+    "subject": "主题",
+    "message": "留言",
+    "messagePlaceholder": "请告诉我们您的需求...",
+    "send": "发送消息",
+    "success": "消息已发送！"
+  },
+  "common": {
+    "roomsOn": "房间开启",
+    "on": "开启",
+    "off": "关闭"
+  },
+  "rooms": {
+    "livingRoom": "客厅",
+    "bedroom": "卧室",
+    "kitchen": "厨房",
+    "bathroom": "浴室",
+    "studyRoom": "书房"
+  }
+}

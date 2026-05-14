@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "lights": "Lumières",
+    "ac": "Climatisation",
+    "curtain": "Rideaux",
+    "contact": "Contact"
+  },
+  "ac": {
+    "title": "Climatisation",
+    "desc": "Contrôlez la température, le mode et la vitesse du ventilateur",
+    "cool": "Froid",
+    "heat": "Chaud",
+    "fan": "Ventilateur",
+    "dry": "Déshumidification",
+    "fanSpeed": "Vitesse"
+  },
+  "lights": {
+    "title": "Éclairage",
+    "desc": "Gérez la luminosité et la couleur de chaque pièce",
+    "brightness": "Luminosité"
+  },
+  "curtain": {
+    "title": "Rideaux",
+    "desc": "Ouvrez, fermez ou définissez la position des rideaux",
+    "open": "Ouvrir",
+    "close": "Fermer",
+    "half": "Moitié"
+  },
+  "home": {
+    "desc": "Contrôle intelligent · Chaque pièce · Chaque appareil",
+    "light": "Lumière",
+    "ac": "Climatisation",
+    "curtain": "Rideaux"
+  },
+  "profile": {
+    "title": "Profil",
+    "desc": "Gérez votre compte et vos préférences",
+    "personalInfo": "Informations personnelles",
+    "name": "Nom",
+    "nameDesc": "Votre nom affiché sur AccessHome",
+    "save": "Enregistrer",
+    "accessibility": "Accessibilité",
+    "fontSize": "Taille de police",
+    "fontSizeDesc": "Ajustez la taille du texte pour une meilleure lisibilité",
+    "language": "Langue",
+    "displayLanguage": "Langue d'affichage",
+    "displayLangDesc": "Changer la langue dans toute l'application",
+    "privacy": "Confidentialité",
+    "deviceData": "Données de l'appareil",
+    "deviceDataDesc": "Réinitialiser toutes les pièces aux paramètres par défaut",
+    "clearData": "Effacer les données",
+    "account": "Compte",
+    "signOut": "Se déconnecter",
+    "signOutDesc": "Déconnectez-vous de votre compte AccessHome",
+    "logout": "Déconnexion",
+    "changePhoto": "Changer la photo"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Vous avez des questions sur votre maison intelligente ou besoin d'une assistance technique ? Nous sommes là pour vous aider.",
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Horaires",
+    "hoursValue": "Lun–Ven 9h–18h",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "firstNamePlaceholder": "Sarah",
+    "lastNamePlaceholder": "Johnson",
+    "emailAddress": "Adresse email",
+    "subject": "Sujet",
+    "subjectOptions": {
+      "general": "Demande générale",
+      "support": "Support technique",
+      "setup": "Configuration de l'appareil",
+      "billing": "Facturation",
+      "feature": "Demande de fonctionnalité"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Dites-nous comment nous pouvons vous aider...",
+    "send": "Envoyer le message",
+    "success": "Message envoyé !"
+  },
+  "rooms": {
+    "livingRoom": "Salon",
+    "bedroom": "Chambre",
+    "kitchen": "Cuisine",
+    "bathroom": "Salle de bain",
+    "studyRoom": "Bureau"
+  }
+}

@@ -1,0 +1,96 @@
+{
+    "nav": {
+        "home": "Strona",
+        "lights": "Światła",
+        "ac": "Klimatyzacja",
+        "curtain": "Zasłony",
+        "contact": "Kontakt"
+    },
+    "ac": {
+        "title": "Klimatyzacja",
+        "desc": "Steruj temperaturą, trybem i prędkością wentylatora",
+        "cool": "Chłód",
+        "heat": "Ciepło",
+        "fan": "Wentylator",
+        "dry": "Osuszanie",
+        "fanSpeed": "Prędkość"
+    },
+    "lights": {
+        "title": "Oświetlenie",
+        "desc": "Zarządzaj jasnością i kolorem w każdym pokoju",
+        "brightness": "Jasność"
+    },
+    "curtain": {
+        "title": "Zasłony",
+        "desc": "Otwórz, zamknij lub ustaw pozycję zasłon",
+        "open": "Otwórz",
+        "close": "Zamknij",
+        "half": "Połowa"
+    },
+    "home": {
+        "desc": "Inteligentna kontrola · Każdy pokój · Każde urządzenie",
+        "light": "Światło",
+        "ac": "Klimatyzacja",
+        "curtain": "Zasłony"
+    },
+    "profile": {
+        "title": "Profil",
+        "desc": "Zarządzaj swoim kontem i preferencjami",
+        "personalInfo": "Dane osobowe",
+        "name": "Imię",
+        "nameDesc": "Twoja nazwa wyświetlana w AccessHome",
+        "save": "Zapisz",
+        "accessibility": "Dostępność",
+        "fontSize": "Rozmiar czcionki",
+        "fontSizeDesc": "Dostosuj rozmiar tekstu dla lepszej czytelności",
+        "language": "Język",
+        "displayLanguage": "Język wyświetlania",
+        "displayLangDesc": "Zmień język w całej aplikacji",
+        "privacy": "Prywatność",
+        "deviceData": "Dane urządzenia",
+        "deviceDataDesc": "Zresetuj wszystkie pokoje do ustawień domyślnych",
+        "clearData": "Wyczyść dane urządzenia",
+        "account": "Konto",
+        "signOut": "Wyloguj się",
+        "signOutDesc": "Wyloguj się ze swojego konta AccessHome",
+        "logout": "Wyloguj",
+        "changePhoto": "Zmień zdjęcie"
+    },
+    "contact": {
+        "title": "Skontaktuj się z nami",
+        "description": "Masz pytania dotyczące swojego inteligentnego domu lub potrzebujesz pomocy technicznej? Jesteśmy tutaj, aby pomóc.",
+        "phone": "Telefon",
+        "email": "Email",
+        "hours": "Godziny",
+        "hoursValue": "Pon–Pt 9:00–18:00",
+        "firstName": "Imię",
+        "lastName": "Nazwisko",
+        "firstNamePlaceholder": "Sarah",
+        "lastNamePlaceholder": "Johnson",
+        "emailAddress": "Adres email",
+        "subject": "Temat",
+        "subjectOptions": {
+            "general": "Zapytanie ogólne",
+            "support": "Wsparcie techniczne",
+            "setup": "Konfiguracja urządzenia",
+            "billing": "Płatności",
+            "feature": "Sugestia funkcji"
+        },
+        "message": "Wiadomość",
+        "messagePlaceholder": "Powiedz nam, jak możemy pomóc...",
+        "send": "Wyślij wiadomość",
+        "success": "Wiadomość została wysłana!"
+    },
+    "common": {
+        "roomsOn": "Pomieszczenia włączone",
+        "on": "Włączone",
+        "off": "Wyłączone"
+    },
+    "rooms": {
+        "livingRoom": "Salon",
+        "bedroom": "Sypialnia",
+        "kitchen": "Kuchnia",
+        "bathroom": "Łazienka",
+        "studyRoom": "Gabinet"
+    }
+}

@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "lights": "Lights",
+    "ac": "AC",
+    "curtain": "Curtain",
+    "contact": "Contact"
+  },
+  "ac": {
+    "title": "Air Conditioning",
+    "desc": "Control temperature, mode and fan speed per room",
+    "cool": "Cool",
+    "heat": "Heat",
+    "fan": "Fan",
+    "dry": "Dry",
+    "fanSpeed": "Fan Speed"
+  },
+  "lights": {
+    "title": "Lights",
+    "desc": "Manage brightness, colour and schedules for every room",
+    "brightness": "Brightness"
+  },
+  "curtain": {
+    "title": "Curtains",
+    "desc": "Open, close or set custom positions for every window",
+    "open": "Open",
+    "close": "Close",
+    "half": "Half"
+  },
+  "home": {
+    "desc": "Smart control · Every room · Any device",
+    "light": "Light",
+    "ac": "AC",
+    "curtain": "Curtain"
+  },
+  "profile": {
+    "title": "Profile",
+    "desc": "Manage your account and preferences",
+    "personalInfo": "Personal Info",
+    "name": "Name",
+    "nameDesc": "Your display name across AccessHome",
+    "save": "Save",
+    "accessibility": "Accessibility",
+    "fontSize": "Font Size",
+    "fontSizeDesc": "Adjust text size for better readability",
+    "language": "Language",
+    "displayLanguage": "Display Language",
+    "displayLangDesc": "Change the language across the app",
+    "privacy": "Privacy",
+    "deviceData": "Device Data",
+    "deviceDataDesc": "Reset all rooms to default settings",
+    "clearData": "Clear Device Data",
+    "account": "Account",
+    "signOut": "Sign Out",
+    "signOutDesc": "Log out of your AccessHome account",
+    "logout": "Log Out",
+    "changePhoto": "Change Photo"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "description": "Have questions about your smart home setup, or need technical support? We're here to help.",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hoursValue": "Mon–Fri 9am–6pm",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "firstNamePlaceholder": "Sarah",
+    "lastNamePlaceholder": "Johnson",
+    "emailAddress": "Email address",
+    "subject": "Subject",
+    "subjectOptions": {
+      "general": "General Enquiry",
+      "support": "Technical Support",
+      "setup": "Device Setup",
+      "billing": "Billing",
+      "feature": "Feature Request"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Tell us how we can help...",
+    "send": "Send Message →",
+    "success": "Message sent! We'll be in touch within 24 hours."
+  },
+  "common": {
+    "roomsOn": "Rooms On",
+    "on": "On",
+    "off": "Off"
+  },
+  "rooms": {
+    "livingRoom": "Living Room",
+    "bedroom": "Bedroom",
+    "kitchen": "Kitchen",
+    "bathroom": "Bathroom",
+    "studyRoom": "Study Room"
+  }
+}
