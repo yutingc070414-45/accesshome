@@ -1,5 +1,6 @@
 package com.accesshome;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,7 @@ public class UserController {
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
     @PostMapping("/register")
-    public String register(@RequestBody User user) {
+    public String register(@Valid @RequestBody User user) {
         if (repo.findByEmail(user.getEmail()) != null) {
             return "EMAIL_EXISTS";
         }
@@ -25,14 +26,25 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody User user) {
+    public java.util.Map<String, String> login(@RequestBody User user) {
+
         User existing = repo.findByEmail(user.getEmail());
+
         if (existing == null) {
-            return "NOT_FOUND";
+            return java.util.Map.of(
+                    "status", "NOT_FOUND");
         }
-        if (encoder.matches(user.getPassword(), existing.getPassword())) {
-            return "SUCCESS:" + existing.getName();
+
+        if (!encoder.matches(user.getPassword(), existing.getPassword())) {
+            return java.util.Map.of(
+                    "status", "WRONG_PASSWORD");
         }
-        return "WRONG_PASSWORD";
+
+        String token = JwtUtil.generateToken(existing.getEmail());
+
+        return java.util.Map.of(
+                "status", "SUCCESS",
+                "name", existing.getName(),
+                "token", token);
     }
 }

@@ -86,21 +86,35 @@ export default function Home() {
   const [curtain, setCurtain] = useState({ active: 0, on: false });
 
   function loadAll() {
-    fetch(`${API}/api/lights`)
+    const token = localStorage.getItem("ah-token");
+
+    fetch(`${API}/api/lights`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
       .then((r) => r.json())
       .then((rooms) => {
         const active = rooms.filter((r) => r.on).length;
         setLights({ active, on: active > 0 });
       });
 
-    fetch(`${API}/api/ac`)
+    fetch(`${API}/api/ac`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
       .then((r) => r.json())
       .then((rooms) => {
         const active = rooms.filter((r) => r.on).length;
         setAc({ active, on: active > 0 });
       });
 
-    fetch(`${API}/api/curtain`)
+    fetch(`${API}/api/curtain`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
       .then((r) => r.json())
       .then((rooms) => {
         const active = rooms.filter((r) => r.openPercent > 0).length;

@@ -1,3 +1,15 @@
+com/accesshome/UserRepository.class
+com/accesshome/SecurityConfig.class
+com/accesshome/UserController.class
+com/accesshome/JwtUtil.class
+com/accesshome/CurtainRepository.class
+com/accesshome/CurtainController.class
+com/accesshome/LightController.class
 com/accesshome/AccessHomeApplication.class
+com/accesshome/LightRepository.class
+com/accesshome/LightSettings.class
 com/accesshome/AcSettings.class
+com/accesshome/User.class
 com/accesshome/AcController.class
+com/accesshome/AcRepository.class
+com/accesshome/CurtainSettings.class
