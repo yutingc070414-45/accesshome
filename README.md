@@ -2,6 +2,14 @@
 
 AccessHome is an accessible smart home full-stack web application that allows users to remotely control home devices such as lights, curtains, and air conditioning.
 
+
+## Live Demo
+
+Frontend:
+https://accesshome.vercel.app
+
+Swagger:
+https://accesshome.onrender.com/swagger-ui/index.html
 ---
 
 ## Features
@@ -76,17 +84,27 @@ mvn spring-boot:run
 
 Swagger:
 
-http://localhost:8080/swagger-ui/index.html
+https://accesshome.onrender.com/swagger-ui/index.html
 
 ---
 
 ## Screenshots
 
 - Login page
-- Dashboard
-- Device control page
-- Swagger API
+![alt text](image-4.png)
 
+- Dashboard
+![alt text](image.png)
+
+- Device control page
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+- Swagger API
+![alt text](image-5.png)
 ---
 
 ## Project Status
